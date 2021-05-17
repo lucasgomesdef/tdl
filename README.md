@@ -4,7 +4,7 @@ Command Line Todo List
 ### Install using git
 Clone repository
 ```
-git clone git@github.com:lucasgomesdef/tdl.git ~/.tdl
+git clone https://github.com/lucasgomesdef/tdl.git ~/.tdl
 ```
 
 Create alias into your favorite rc. Ex: (zshrc)
