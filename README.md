@@ -23,7 +23,7 @@ source ~/.zshrc
 tdl [cmd] <parameters>
 ```
 Commands:
-* [**list**]: List all todo list items;
+* [**show**]: Show all todo list items;
 * [**add**] *description*: Add todo list item with given *description*;
 * [**remove**] *id*: Remove todo list item with given *id*;
 * [**done**] *id*: Mark todo list item with given *id* as done;
