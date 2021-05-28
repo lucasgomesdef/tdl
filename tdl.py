@@ -14,8 +14,8 @@ def todo():
         elif cmd == 'remove':
             id = sys.argv[2]
             todos.remove(id)
-        elif cmd == 'list':
-            todos.list()
+        elif cmd == 'show':
+            todos.show()
         elif cmd == 'done':
             id = sys.argv[2]
             todos.done(id)

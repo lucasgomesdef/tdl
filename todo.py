@@ -7,13 +7,15 @@ class Todo:
         self.path = f'{os.path.expanduser("~")}/.tdl/todo.json'
         self.todos = json.load(open(self.path))
 
-    def list(self):
-        if (len(self.todos.keys()) > 0):
+    def show(self):
+        task_list_size = len(self.todos.keys())
+        if (task_list_size > 0):
             print('todo list:')
             for id in self.todos:
                 name = self.todos[id]['name']
                 done = '[x]' if self.todos[id]['done'] else '[ ]'
-                print(f'{id}. {done} {name}')
+                extra_space = ' ' if task_list_size > 10 and int(id) < 10 else ''
+                print(f'{id}.{extra_space} {done} {name}')
         else:
             print('todo list empty!')
 
